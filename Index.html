@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A brief description of your web page content. This is important for SEO." />
+    <meta name="keywords" content="html, basic, structure, meta, example" />
+    <meta name="author" content="Your Name or Company Name" />
+    <meta name="robots" content="index, follow" />
+    <title>XeOne.</title>
+    <link href="images/images.png" rel="icon">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+  <style>
+    /* Testimonial Section */
+.testimonial-section {
+  position: relative;
+    background: url('images/bg-testimonial.jpg') center/cover no-repeat;
+  padding: 120px 20px;
+  color: #fff;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+.testimonial-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+.testimonial-content {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 1;
+  text-align: left;
+}
+.testimonial-content h2 {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 300;
+  margin-bottom: 20px;
+  quotes: "“" "”" "„" "‚";
+}
+.testimonial-content h2::before { content: open-quote; font-size: 3rem; vertical-align: top; margin-right: 8px; }
+.testimonial-content h2::after  { content: close-quote; font-size: 3rem; margin-left: 8px; }
+
+.testimonial-author .name {
+  font-weight: 600;
+  margin: 0;
+}
+.testimonial-author .title {
+  margin: 2px 0 20px;
+  opacity: 0.8;
+}
+
+.testimonial-thumbs {
+  display: flex;
+  gap: 10px;
+}
+.testimonial-thumbs img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.7);
+  transition: border-color .3s;
+}
+.testimonial-thumbs img:hover,
+.testimonial-thumbs img:focus {
+  border-color: #00e5ff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .testimonial-content h2 { font-size: 1.5rem; }
+  .testimonial-section { padding: 80px 10px; }
+}
+  </style>
+
+
+
+
+<div class="hero">
+    <nav>
+        <h2 class="logo"><i class="ri-x-line blue-icon"></i><span>XeOne</span></h2>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+    </nav>
+
+    <div class="hero-content">
+        <h1>Next Big Thing <br> In One Page</h1>
+        <p>The Best Multipurpose One Page Template in Market.</p>
+    </div>
+</div>
+
+
+
+<!-- FEATURES (static, no Swiper) -->
+<section class="features-section">
+  <div class="features-container">
+    <div class="feature-box teal">
+      <i class="ri-code-s-slash-line icon"></i>
+      <h3>Clean Coded</h3>
+      <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+    </div>
+    <div class="feature-box purple">
+      <i class="ri-global-line icon"></i>
+      <h3>SEO Optimized</h3>
+      <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+    </div>
+    <div class="feature-box teal">
+      <i class="ri-file-list-line icon"></i>
+      <h3>Well Documented</h3>
+      <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="awesome-features-section">
+    <div class="container">
+        <div class="content-left">
+            <p class="section-subtitle">Service We Offer</p>
+            <h2>Awesome Features</h2>
+            <p class="description">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus.</p>
+            <a href="#" class="btn-seo-team">SEO TEAM</a>
+        </div>
+        <div class="content-right">
+            <img src="images/123.png" alt="Devices showing website" class="devices-img">
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="work-process-section">
+    <h2 class="work-process-heading">Work Process</h2>
+    <div class="process-steps-container">
+        <div class="process-step">
+            <div class="step-circle">01</div>
+            <h3 class="step-title">Concept</h3>
+            <p class="step-description">Quisque tellus risus, adipisci viverra bibendum urna.</p>
+        </div>
+        <div class="process-step">
+            <div class="step-circle">02</div>
+            <h3 class="step-title">Plan</h3>
+            <p class="step-description">Quisque tellus risus, adipisci viverra bibendum urna.</p>
+        </div>
+        <div class="process-step">
+            <div class="step-circle">03</div>
+            <h3 class="step-title">Design</h3>
+            <p class="step-description">Quisque tellus risus, adipisci viverra bibendum urna.</p>
+        </div>
+        <div class="process-step">
+            <div class="step-circle">04</div>
+            <h3 class="step-title">Development</h3>
+            <p class="step-description">Quisque tellus risus, adipisci viverra bibendum urna.</p>
+        </div>
+        <div class="process-step">
+            <div class="step-circle">05</div>
+            <h3 class="step-title">Quality Check</h3>
+            <p class="step-description">Quisque tellus risus, adipisci viverra bibendum urna.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="team-section">
+    <div class="team-header">
+        <p class="section-subtitle">Heros Behind The Company</p>
+        <h2 class="section-title">Creative Team</h2>
+        <p class="team-description">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus.</p>
+    </div>
+    <div class="team-members-container">
+        <div class="team-member-card" data-member-id="1">
+            <div class="team-member-image-wrapper">
+                <img src="images/1.png" alt="Johnny Walkin">
+            </div>
+            <div class="name-overlay purple-bg">
+                <h3>Alexa Walkin</h3>
+                <p>CEO, The XeOne Company</p>
+            </div>
+        </div>
+        <div class="team-member-card" data-member-id="2">
+            <div class="team-member-image-wrapper">
+                <img src="images/2.png" alt="Johny Walkin">
+            </div>
+            <div class="name-overlay teal-bg">
+                <h3>Johny Walkin</h3>
+                <p>Designer, The XeOne Company</p>
+            </div>
+        </div>
+        <div class="team-member-card" data-member-id="3">
+            <div class="team-member-image-wrapper">
+                <img src="images/3.png" alt="Teena Walkin">
+            </div>
+            <div class="name-overlay lightblue-bg">
+                <h3>Teena Walkin</h3>
+                <p>Model, The XeOne Company</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="watch-video-section">
+    <div class="container">
+        <div class="content-left">
+            <p class="section-subtitle light-blue">We have an excellent story</p>
+            <h2>Watch Our Video</h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#" class="btn-primary">BUY NOW</a>
+        </div>
+        <div class="content-right">
+            <div class="video-placeholder">
+                <img src="images/case-studie-1.jpg" alt="Laptop with Code">
+                <div class="play-button">
+                    <i class="ri-play-circle-fill"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal-overlay">
+    <div class="modal-content">
+        <span class="modal-close-button">&times;</span>
+        <div class="modal-member-info">
+            <img src="" alt="" class="modal-member-image">
+            <h3 class="modal-member-name"></h3>
+            <p class="modal-member-designation"></p>
+        </div>
+        <div class="modal-skills">
+            <h4>Skills</h4>
+            <div class="skill-item">
+                <p>Web Design</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>Development</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>Marketing</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<section class="creative-work">
+  <div class="cw-header">
+    <p class="cw-subtitle">Portfolio Designs</p>
+    <h2 class="cw-title">Creative Work</h2>
+    <p class="cw-description">
+      Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus.
+    </p>
+    <div class="cw-filters">
+      <button class="filter active" data-filter="*">All</button>
+      <button class="filter" data-filter=".web">Web</button>
+      <button class="filter" data-filter=".print">Print</button>
+      <button class="filter" data-filter=".graphic">Graphic</button>
+      <button class="filter" data-filter=".logo">Logo</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="cw-grid">
+    <div class="cw-item web">
+      <img src="images/Cap.PNG" alt="Web Project">
+    </div>
+    <div class="cw-item graphic">
+      <img src="images/gallery-flat2.jpg" alt="Graphic Design">
+    </div>
+    <div class="cw-item logo">
+      <img src="images/gallery-flat3.jpg" alt="Logo Design">
+    </div>
+    <div class="cw-item print">
+      <img src="images/gallery-flat4.jpg" alt="Print Project">
+    </div>
+    <div class="cw-item web">
+      <img src="images/gallery-flat5.jpg" alt="Web Project">
+    </div>
+    <div class="cw-item graphic">
+      <img src="images/gallery-flat6.jpg" alt="Graphic Design">
+    </div>
+     <div class="cw-item graphic">
+      <img src="images/gallery-flat4.jpg" alt="Graphic Design">
+    </div>
+     <div class="cw-item graphic">
+      <img src="images/gallery-flat2.jpg" alt="Graphic Design">
+    </div>
+     <div class="cw-item graphic">
+      <img src="images/gallery-flat3.jpg" alt="Graphic Design">
+    </div>
+     <div class="cw-item graphic">
+      <img src="images/Cap.PNG" alt="Graphic Design">
+    </div>
+  </div>
+</section>
+
+
+
+<section class="packages-section">
+  <div class="packages-header">
+    <p class="pkg-subtitle">Choose The Best One</p>
+    <h2 class="pkg-title">Our Packages</h2>
+    <p class="pkg-description">
+      Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus.
+    </p>
+  </div>
+
+  <div class="packages-container">
+    <!-- Plan 1 -->
+    <div class="pkg-card">
+      <h3 class="pkg-name">Start plan</h3>
+      <p class="pkg-text">If you are a small business and you are interested in small rebranding then this is a perfect plan for you</p>
+      <div class="pkg-price">
+        <span class="currency">$</span>
+        <span class="amount">9.99</span>
+        <span class="period">/ month</span>
+      </div>
+      <ul class="pkg-features">
+        <li>Designing a small brand</li>
+        <li>Redesign the company logo</li>
+        <li>Deploying a website</li>
+        <li class="disabled">Studio and product photography</li>
+        <li class="disabled">Professional project support</li>
+      </ul>
+      <a href="#" class="pkg-btn">Get Started</a>
+    </div>
+
+
+
+    <!-- Plan 2 (highlighted) -->
+    <div class="pkg-card featured">
+      <h3 class="pkg-name">Business plan</h3>
+      <p class="pkg-text">If you are a small business and you are interested in small rebranding then this is a perfect plan for you</p>
+      <div class="pkg-price">
+        <span class="currency">$</span>
+        <span class="amount">29.99</span>
+        <span class="period">/ month</span>
+      </div>
+      <ul class="pkg-features">
+        <li>Designing a small brand</li>
+        <li>Redesign the company logo</li>
+        <li>New visual design of the website</li>
+        <li>Deploying a website</li>
+        <li>Studio and product photography</li>
+      </ul>
+      <a href="#" class="pkg-btn">Get Started</a>
+    </div>
+
+
+
+    <!-- Plan 3 -->
+    <div class="pkg-card">
+      <h3 class="pkg-name">Enterprise plan</h3>
+      <p class="pkg-text">If you are a small business and you are interested in small rebranding then this is a perfect plan for you</p>
+      <div class="pkg-price">
+        <span class="currency">$</span>
+        <span class="amount">49.99</span>
+        <span class="period">/ month</span>
+      </div>
+      <ul class="pkg-features">
+        <li>Designing a small brand</li>
+        <li>Redesign the company logo</li>
+        <li>New visual design of the website</li>
+        <li>Deploying a website</li>
+        <li>Studio and product photography</li>
+      </ul>
+      <a href="#" class="pkg-btn">Get Started</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Testimonial Section  -->
+<section id="testimonial" class="testimonial-section">
+  <div class="testimonial-content">
+    <h2>“We show you our professional achievements in numbers, which show the acquired skills„</h2>
+    <div class="testimonial-author">
+      <p class="name">Stephen Jhon</p>
+      <p class="title">CEO, XeOne</p>
+    </div>
+    <div class="testimonial-thumbs">
+      <img src="images/testimonial-1.jpg" alt="Client 1"><!-- change photo  -->
+      <img src="images/testimonial-2.jpg" alt="Client 2">
+      <img src="images/testimonial-3.jpg" alt="Client 3">
+    </div>
+  </div>
+</section>
+
+<!--Testimonials Ends-->
+
+
+
+
+<section class="blog-section">
+  <div class="blog-container">
+    <div class="blog-image">
+      <img src="images/ss.PNG" alt="Desk with speaker and plant">
+    </div>
+    <div class="blog-content">
+      <p class="blog-subtitle">Read Our News</p>
+      <h2 class="blog-title">Latest Blog Post</h2>
+      <p class="blog-text">
+        Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus.
+      </p>
+      <a href="#" class="blog-btn">Read Full Story</a>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Conact-->
+
+
+<section class="contact-section">
+  <div class="contact-container">
+    <!-- Left column: info -->
+    <div class="contact-info">
+      <p class="info-subtitle">Let’s Get In Touch</p>
+      <h2 class="info-title">Contact XeOne</h2>
+      <p class="info-text">
+        West is not just about graphic design; it’s more than that. We offer integral communication services, and we’re responsible for our process and results. We thank each client and their projects.
+      </p>
+
+      <div class="info-grid">
+        <div class="info-block">
+          <h4>Our Address</h4>
+          <p>123 Street, New York City, United States Of America.</p>
+          <a href="#" class="info-link">Get Directions</a>
+        </div>
+        <div class="info-block">
+          <h4>Our Phone</h4>
+          <p>Office Telephone: 001 01085379709<br>Mobile: 001 63165370895</p>
+          <a href="#" class="info-link">Call Us</a>
+        </div>
+        <div class="info-block">
+          <h4>Our Email</h4>
+          <p>Main Email: admin@website.com<br>Inquiries: email@website.com</p>
+          <a href="#" class="info-link">Send a Message</a>
+        </div>
+        <div class="info-block">
+          <h4>Our Support</h4>
+          <p>Main Support: info@website.com<br>Sales: support@website.com</p>
+          <a href="#" class="info-link">Open a Ticket</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column: form -->
+    <div class="contact-form">
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" placeholder="First Name" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Last Name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone" required>
+          </div>
+        </div>
+        <div class="form-group fullwidth">
+          <textarea placeholder="Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Submit Request</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="site-footer">
+  <div class="footer-social">
+    <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+    <a href="#" aria-label="Twitter"><i class="ri-twitter-fill"></i></a>
+    <a href="#" aria-label="Google+"><i class="ri-google-fill"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+    <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+    <a href="#" aria-label="Email"><i class="ri-mail-line"></i></a>
+  </div>
+  <div class="footer-copy">
+    © 2019 XeOne made with love by themesindustry
+  </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="Script.js"></script>
+
+</body>
+</html>
